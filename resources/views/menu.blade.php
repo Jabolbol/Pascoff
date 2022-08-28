@@ -7,7 +7,7 @@
             @foreach($menus as $menu)
             <div class="col-lg-3">
                 <div class="shadow p-3 mb-5 bg-white">
-                    <img src="{{$menu}}" class="img-fluid">
+                    <img src="{{ asset('/img/menu') . '/' . $menu->getFilename() }}" class="img-fluid">
                     <div class="text-center mt-3">
                         <h5>Menu</h5>
                     </div>
